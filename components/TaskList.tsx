@@ -24,7 +24,7 @@ const TaskList:FC<Props> = ({tasks, deleteFun, completeFun}) => {
                     />
                 :<View>
                     <ActivityIndicator size="large"/>
-                    <Text style={[tw` text-center text-blue-200 pt-3`]} >You have nothing to do...</Text>
+                    <Text style={[tw` text-center text-blue-200 pt-3`]} >There is no tasks...</Text>
                 </View>
             }
         </View>

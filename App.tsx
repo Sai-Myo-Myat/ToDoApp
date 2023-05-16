@@ -1,6 +1,5 @@
 
-import { StatusBar } from 'expo-status-bar';
-import { View, TextInput, Button, Text, Pressable } from 'react-native';
+import { View, TextInput, Button, StatusBar } from 'react-native';
 import { useCallback, useState } from 'react';
 import uuid from 'react-native-uuid';
 import {TasksType} from './types'
@@ -67,7 +66,7 @@ export default function App() {
   
   return (
     <View style={[tw`h-1/1 p-5 flex justify-between`]}>
-      <StatusBar style="auto" />
+      <StatusBar animated={true} barStyle="light-content" backgroundColor="#2FA4FF" showHideTransition="fade"/>
       <View style={[tw` flex flex-row mt-10  justify-around items-center `]}>
         <TextInput
           style={[tw`flex-2 border rounded-lg p-2 m-2`]}
