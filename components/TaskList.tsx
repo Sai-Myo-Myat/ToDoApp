@@ -17,7 +17,7 @@ const TaskList:FC<Props> = ({tasks, deleteFun, completeFun}) => {
             {
                 tasks.length > 0 ? 
                     <FlatList
-                    style={[tw`px-3 h-4/5`]}
+                    style={[tw`px-3 h-3/5`]}
                     data={tasks}
                     renderItem={({item}) => <TaskComponent task={item} deleteFun={deleteFun} completeFun={completeFun} />}
                     keyExtractor={item => item.id.toString()}
